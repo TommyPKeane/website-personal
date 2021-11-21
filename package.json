@@ -1,0 +1,49 @@
+{
+  "name": "website-personal",
+  "version": "0.1.0",
+  "author": "Tommy P. Keane <talk@tommypkeane.com> (https://www.tommypkeane.com)",
+  "license": "CC-BY-NC-ND",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint .",
+    "fix": "eslint --fix .",
+    "fix-preview": "eslint --fix-dry-run .",
+    "start": "webpack-dev-server --mode=development --open --hot",
+    "build": "webpack --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TommyPKeane/website-personal.git"
+  },
+  "keywords": [],
+  "homepage": "https://github.com/TommyPKeane/website-personal",
+  "bugs": "https://github.com/TommyPKeane/website-personal/issues",
+  "dependencies": {
+    "react": "^18.0.0-beta-149b420f6-20211119",
+    "react-dom": "^18.0.0-beta-149b420f6-20211119"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-react": "^7.16.0",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.5.1",
+    "eslint": "^8.2.0",
+    "eslint-plugin-react": "^7.27.1",
+    "html-webpack-plugin": "^5.5.0",
+    "jest": "^27.3.1",
+    "mini-css-extract-plugin": "^2.4.5",
+    "node-sass": "^6.0.1",
+    "sass-loader": "^12.3.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.64.2",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.5.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  }
+}
