@@ -1,0 +1,15 @@
+.spinner-firstspinner-svg svg {
+  animation: batman 5.00s ease-in 0.75s infinite;
+}
+
+@keyframes batman {
+  from {
+    transform: rotate(0deg) scale(0.15, 0.15);
+  }
+  50% {
+    transform: rotate(720deg) scale(2, 2);
+  }
+  to {
+    transform: rotate(1080deg) scale(0.15, 0.15);
+  }
+}
