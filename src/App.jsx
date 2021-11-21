@@ -11,11 +11,11 @@ import "./assets/scss/styles.scss";
 
 const App = () => {
   return (
-    <div>
+    <div className="app">
       <header>
         <h1>Tommy P. Keane</h1>
       </header>
-      <div className="app">
+      <div class="intro">
         <p>
           Hiya! Welcome to my website.
         </p>
