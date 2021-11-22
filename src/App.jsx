@@ -7,6 +7,7 @@
 import React from "react";
 import ThemeMode from "./components/ThemeChanger.jsx";
 import FirstSpinner from "./components/spinners/FirstSpinner.jsx";
+import "./assets/scss/index.scss";
 import "./assets/scss/styles.scss";
 
 const App = () => {
@@ -20,20 +21,16 @@ const App = () => {
           Hiya! Welcome to my website.
         </p>
         <p>
-          This is the personal, infotainment web-portal of me, <span class="name-tommy">Tommy P. Keane</span>,
-          a vegan software-engineer-slash-data-scientist-slash-cloud-systems-architect. If you're lookin' for a famous
-          <span class="name-tommy">Tommy P. Keane</span>, that is most definitely not me. If the
-          <span class="name-tommy">Tommy P. Keane</span> that you're lookin' for was born in the mid-1980s in the United
-          States of America, then you're probably at the right place.
+          This is the personal, infotainment web-portal of me, <span class="name-tommy">Tommy P. Keane</span>, a vegan software-engineer-slash-data-scientist-slash-cloud-systems-architect. If you're lookin' for a famous <span class="name-tommy">Tommy P. Keane</span>, that is most definitely not me. If the <span class="name-tommy">Tommy P. Keane</span> that you're lookin' for was born in the mid-1980s in the United States of America, then you're probably at the right place.
         </p>
         <p>
 
         </p>
         <section>
           <FirstSpinner
-            type="TriangleSpinner"
-            height={250} // [px]
-            width={250} // [px]
+            // type="TriangleSpinner"
+            // height={100} // [px]
+            // width={100} // [px]
             // timeout={15_000} // [ms]
           />
         </section>

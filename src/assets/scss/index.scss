@@ -1,0 +1,74 @@
+@import "variables.scss";
+
+@font-face {
+  font-family: "JetBrainsMono";
+  font-weight: 400;
+  src: local("JetBrainsMono"), url(fonts/jetbrains/JetBrainsMono-Regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "JetBrainsMono";
+  font-weight: 500;
+  src: local("JetBrainsMono"), url(fonts/jetbrains/JetBrainsMono-Medium.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "JetBrainsMono";
+  font-weight: 500;
+  src: local("JetBrainsMono"), url(fonts/jetbrains/JetBrainsMono-SemiBold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "JetBrainsMono";
+  font-weight: 700;
+  src: local("JetBrainsMono"), url(fonts/jetbrains/JetBrainsMono-Bold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "JetBrainsMono";
+  font-weight: 700;
+  font-style: italic;
+  src: local("JetBrainsMono"), url(fonts/jetbrains/JetBrainsMono-BoldItalic.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "JetBrainsMono";
+  font-weight: 800;
+  src: local("JetBrainsMono"), url(fonts/jetbrains/JetBrainsMono-ExtraBold.woff2) format("woff2");
+}
+
+html {
+  font-size: 12px;
+  text-align: center;
+}
+
+header h1 {
+  font-family: "JetBrainsMono", sans-serif;
+  font-weight: 800;
+  font-size: 3rem;
+  color: $primary;
+}
+
+body {
+  width: 80vw;
+  text-align: center;
+  margin: auto auto auto auto;
+}
+
+span.name-tommy {
+  font-family: "JetBrainsMono", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+div.intro {
+  width: 70%;
+  margin: auto auto auto auto;
+  text-align: center;
+}
+
+p {
+  font-family: "JetBrainsMono", sans-serif;
+  font-weight: 400;
+  line-height: 2.15;
+}
