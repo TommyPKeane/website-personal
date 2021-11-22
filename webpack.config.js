@@ -24,6 +24,7 @@ module.exports = {
     modules: [path.join(__dirname, "src",), "node_modules",],
     alias: {
       react: path.join(__dirname, "node_modules", "react",),
+      fonts: path.join(__dirname, "public", "fonts",),
     },
     extensions: [".js", ".jsx", ".scss",],
   },
