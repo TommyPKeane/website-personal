@@ -7,12 +7,15 @@
 import React, { Suspense, } from "react";
 import { Canvas, } from "@react-three/fiber";
 
-import ThemeMode from "./components/ThemeChanger.jsx";
-import FirstSpinner from "./components/spinners/FirstSpinner.jsx";
 // import FirstShape from "./components/3d/FirstShape.jsx";
 import HomeInstance from "./components/3d/HomeView.jsx";
+import CodeBlock from "./components/articles/CodeBlock.jsx";
+import FirstSpinner from "./components/spinners/FirstSpinner.jsx";
+import ThemeMode from "./components/ThemeChanger.jsx";
+
 import "./assets/scss/index.scss";
 import "./assets/scss/styles.scss";
+
 
 const App = () => {
   return (
@@ -47,6 +50,13 @@ const App = () => {
             </Suspense>
           </Canvas>
         </div>
+      </div>
+      <div>
+        <h1>Example Code</h1>
+        <CodeBlock
+          lang="js"
+          code="let x = 5;"
+        />
       </div>
       <footer>
         <ThemeMode/>
