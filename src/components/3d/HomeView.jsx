@@ -1,6 +1,7 @@
 import React, { useState, useRef, } from "react";
 import PropTypes from "prop-types";
 import { useLoader, } from "@react-three/fiber";
+import { GLTFLoader, } from "three/examples/jsm/loaders/GLTFLoader";
 import { OBJLoader, } from "three/examples/jsm/loaders/OBJLoader";
 import { MTLLoader, } from "three/examples/jsm/loaders/MTLLoader";
 
@@ -9,20 +10,11 @@ export default function HomeInstance(props,) {
   // This reference gives us direct access to the THREE.Mesh object
   const threeRef = useRef();
 
-  const homeMaterial = useLoader(
-    MTLLoader,
-    props.mtlFile,
-  );
   const homeObj = useLoader(
-    OBJLoader,
-    props.objFile,
-    loader => {
-      homeMaterial.preload();
-      homeMaterial.side = threeRef.FrontSide;
-      loader.setMaterials(homeMaterial,);
-      return;
-    },
+    GLTFLoader,
+    props.gltfFile,
   );
+
   console.log(homeObj);
 
   // Hold state for hovered and clicked events
@@ -38,10 +30,11 @@ export default function HomeInstance(props,) {
     rotation={props.rotation}
     onClick={onClickCallback}
     dispose={null}
-    object={homeObj} />;
+    object={homeObj.scene} />;
 }
 
 HomeInstance.propTypes = {
+  gltfFile: PropTypes.string,
   objFile: PropTypes.string,
   mtlFile: PropTypes.string,
   position: PropTypes.array,
@@ -51,6 +44,7 @@ HomeInstance.propTypes = {
 };
 
 HomeInstance.defaultProps = {
+  gltfFile: "/3d/home-front.glb",
   objFile: "/3d/home-front.obj",
   mtlFile: "/3d/home-front.mtl",
   position: [0, 0, 0,],

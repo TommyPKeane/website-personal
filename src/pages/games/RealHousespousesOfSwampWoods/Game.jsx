@@ -28,10 +28,9 @@ export default function RealHousespousesOfSwampWoods(props,) {
         </p>
         <div>
           <Canvas>
-            <ambientLight />
-            <ambientLight position={[0, 5, 5,]} />
             <Suspense fallback={null}>
-              <HomeInstance />
+              <ambientLight color={"0xFFFFFF"} intensity={0.25} position={[0, 1, -5,]} />
+              <HomeInstance position={[0, -1, 0]} />
             </Suspense>
           </Canvas>
         </div>
